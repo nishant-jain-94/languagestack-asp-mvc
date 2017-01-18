@@ -25,4 +25,4 @@ WORKDIR /app
 
 EXPOSE 5000
 
-CMD ["/bin/sh", "-c"]
+CMD ["/bin/sh"]

@@ -3,12 +3,14 @@ services:
   web:
     image: localhost:5000/asp-evaluation:0.1.0    
     build: .
-    env_file:
-      - asp.env
+    # env_file:
+    #   - asp.env
     ports:
       - "5000:5000" 
     depends_on:
       - sqlserver
+    stdin_open: true
+    tty: true
     # volumes:
     #   - /data:/data
     #   - /storage/workspaces/assignments/data:/assignments/data
